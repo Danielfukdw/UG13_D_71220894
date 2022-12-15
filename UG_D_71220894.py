@@ -17,17 +17,21 @@ def drawhuruf (b,n):
         pen.forward(150)
 drawhuruf(-10,200)
 
-def drawbox(v,y,z):
+def drawangka(v,y,z):
     pen.up()
     pen.goto(v,y)
     pen.down()
+    pen.color('black')
     for i in range (4):
         pen.forward(z)
         pen.right(90)
         pen.forward(z)
 
-drawbox(-100,50,50)
-      
+drawangka(-200,0,50)
+drawangka(-200,100,50)
+
+
+     
 pen = turtle.Screen().exitonclick()
 
 
